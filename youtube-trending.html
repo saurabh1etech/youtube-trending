@@ -169,11 +169,11 @@ app.controller('myCtrl', function($scope, $http) {
 		      $scope.videoDetail = response.data.responseData;
 		      console.log(response)
 		      if(response.data.responseData){
-		      	$http.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=AIzaSyAqXvS3mVAZZONWwG3QS983sJI3Ocdm29g`).then(function(response) {
+		      	$http.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=YOUR-GOOGLE-API-KEY`).then(function(response) {
 				      $scope.channelDetail = response.data.items[0].statistics;
 				      console.log(response);
 				});
-				$http.get(`https://www.googleapis.com/youtube/v3/videos?key=AIzaSyAqXvS3mVAZZONWwG3QS983sJI3Ocdm29g&part=statistics&id=${id}`).then(function(response) {
+				$http.get(`https://www.googleapis.com/youtube/v3/videos?key=YOUR-GOOGLE-API-KEY&part=statistics&id=${id}`).then(function(response) {
 				      $scope.videoStatistics = response.data.items[0].statistics;
 				      console.log(response);
 				});
