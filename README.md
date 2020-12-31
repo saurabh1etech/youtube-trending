@@ -15,11 +15,13 @@ A web application to scrap the popular videos from Youtube, save them into the d
 2. Run NPM install in your root directory
 3. Create a local database with name "youtube" with a document name "videos"
 4. Go to the file config.env and replace the replace the API_KEY with the one you created before
-5. oprn CLI and Run command node server.js  
+5. Open CLI and Run command node server.js  
+6. Open config.env and replace "YOUR-GOOGLE-API-KEY" with your Google API Key
 
 # Frontend (Angular.js, jquery, html, css)
 
 1. Run the file youtube-trending.html file in the browser
+2. Replace "YOUR-GOOGLE-API-KEY" with your Google API Key
 
 
 # Functionality
